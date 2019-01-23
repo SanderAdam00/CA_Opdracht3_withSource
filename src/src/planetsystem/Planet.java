@@ -2,7 +2,7 @@ package planetsystem;
 
 import misc.Color;
 
-public class Planet extends Universe {
+public class Planet extends Galaxy {
 	private int id;
 	private Color color;
 

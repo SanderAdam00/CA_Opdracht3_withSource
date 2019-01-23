@@ -1,13 +1,5 @@
 package planetsystem;
 
-public class Universe {
-	private char universeId;
+public abstract class Universe {
 
-	public Universe(char universeId) {
-		this.universeId = universeId;
-	}
-
-	public char getUniverseId() {
-		return universeId;
-	}
 }
