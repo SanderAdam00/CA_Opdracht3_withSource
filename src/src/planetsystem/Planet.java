@@ -2,12 +2,12 @@ package planetsystem;
 
 import misc.Color;
 
-public class Planet extends Galaxy {
+public class Planet {
+
 	private int id;
 	private Color color;
 
-	public Planet(int id, Color color, char universeId) {
-		super(universeId);
+	public Planet(int id, Color color) {
 		this.id = id;
 		this.color = color;
 	}
@@ -19,4 +19,6 @@ public class Planet extends Galaxy {
 	public Color getColor() {
 		return color;
 	}
+
+
 }

@@ -1,13 +1,20 @@
 package planetsystem;
 
-public class Galaxy extends Universe {
-	private char universeId;
+import java.util.ArrayList;
 
-	public Galaxy(char universeId) {
-		this.universeId = universeId;
+public class Galaxy{
+
+	private char galaxyId;
+	private ArrayList<Planet> planets;
+
+	public Galaxy(char galaxyId, ArrayList<Planet> planets) {
+		this.galaxyId = galaxyId;
+		this.planets = planets;
 	}
 
-	public char getUniverseId() {
-		return universeId;
+	public char getGalaxyId() {
+		return galaxyId;
 	}
+
+
 }
