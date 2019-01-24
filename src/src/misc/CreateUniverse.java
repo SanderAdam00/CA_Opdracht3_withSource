@@ -5,6 +5,7 @@ import planetsystem.Planet;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Set;
 
 public class CreateUniverse {
 
@@ -15,11 +16,13 @@ public class CreateUniverse {
 		Planet planetA2 = new Planet(Galaxy.A, 2, Color.BLUE);
 		Planet planetA3 = new Planet(Galaxy.A, 3, Color.YELLOW);
 		Planet planetA4 = new Planet(Galaxy.A, 4, Color.RED);
-		Planet planetA5 = new Planet(5, Color.RED);
-		Planet planetA6 = new Planet(6, Color.YELLOW);
-		Planet planetA7 = new Planet(7, Color.RED);
-		Planet planetA8 = new Planet(8, Color.RED);
-		Planet planetA9 = new Planet(9, Color.YELLOW);
+		Planet planetA5 = new Planet(Galaxy.A,5, Color.RED);
+		Planet planetA6 = new Planet(Galaxy.A,6, Color.YELLOW);
+		Planet planetA7 = new Planet(Galaxy.A,7, Color.RED);
+		Planet planetA8 = new Planet(Galaxy.A,8, Color.RED);
+		Planet planetA9 = new Planet(Galaxy.A,9, Color.YELLOW);
+
+
 
 		planets.add(planetA1);
 		planets.add(planetA2);
@@ -37,15 +40,15 @@ public class CreateUniverse {
 	public ArrayList<Planet> createGalaxyB(){
 		//creating galaxy B
 		ArrayList<Planet> planets = new ArrayList<>();
-		Planet planetB1 = new Planet(1, Color.RED);
-		Planet planetB2 = new Planet(2, Color.RED);
-		Planet planetB3 = new Planet(3, Color.YELLOW);
-		Planet planetB4 = new Planet(4, Color.YELLOW);
-		Planet planetB5 = new Planet(5, Color.RED);
-		Planet planetB6 = new Planet(6, Color.RED);
-		Planet planetB7 = new Planet(7, Color.BLUE);
-		Planet planetB8 = new Planet(8, Color.RED);
-		Planet planetB9 = new Planet(9, Color.GREEN);
+		Planet planetB1 = new Planet(Galaxy.B,1, Color.RED);
+		Planet planetB2 = new Planet(Galaxy.B, 2, Color.RED);
+		Planet planetB3 = new Planet(Galaxy.B, 3, Color.YELLOW);
+		Planet planetB4 = new Planet(Galaxy.B, 4, Color.YELLOW);
+		Planet planetB5 = new Planet(Galaxy.B, 5, Color.RED);
+		Planet planetB6 = new Planet(Galaxy.B, 6, Color.RED);
+		Planet planetB7 = new Planet(Galaxy.B,7, Color.BLUE);
+		Planet planetB8 = new Planet(Galaxy.B,8, Color.RED);
+		Planet planetB9 = new Planet(Galaxy.B,9, Color.GREEN);
 
 		planets.add(planetB1);
 		planets.add(planetB2);
@@ -63,15 +66,15 @@ public class CreateUniverse {
 	public ArrayList<Planet> createGalaxyC(){
 		//creating galaxy C
 		ArrayList<Planet> planets = new ArrayList<>();
-		Planet planetC1 = new Planet(1, Color.RED);
-		Planet planetC2 = new Planet(2, Color.RED);
-		Planet planetC3 = new Planet(3, Color.BLUE);
-		Planet planetC4 = new Planet(4, Color.RED);
-		Planet planetC5 = new Planet(5, Color.GREEN);
-		Planet planetC6 = new Planet(6, Color.BLUE);
-		Planet planetC7 = new Planet(7, Color.RED);
-		Planet planetC8 = new Planet(8, Color.GREEN);
-		Planet planetC9 = new Planet(9, Color.YELLOW);
+		Planet planetC1 = new Planet(Galaxy.C,1, Color.RED);
+		Planet planetC2 = new Planet(Galaxy.C,2, Color.RED);
+		Planet planetC3 = new Planet(Galaxy.C,3, Color.BLUE);
+		Planet planetC4 = new Planet(Galaxy.C,4, Color.RED);
+		Planet planetC5 = new Planet(Galaxy.C,5, Color.GREEN);
+		Planet planetC6 = new Planet(Galaxy.C,6, Color.BLUE);
+		Planet planetC7 = new Planet(Galaxy.C,7, Color.RED);
+		Planet planetC8 = new Planet(Galaxy.C,8, Color.GREEN);
+		Planet planetC9 = new Planet(Galaxy.C,9, Color.YELLOW);
 
 		planets.add(planetC1);
 		planets.add(planetC2);
@@ -89,15 +92,15 @@ public class CreateUniverse {
 	public ArrayList<Planet> createGalaxyD(){
 		//creating galaxy D
 		ArrayList<Planet> planets = new ArrayList<>();
-		Planet planetD1 = new Planet(1, Color.BLUE);
-		Planet planetD2 = new Planet(2, Color.BLUE);
-		Planet planetD3 = new Planet(3, Color.BLUE);
-		Planet planetD4 = new Planet(4, Color.BLUE);
-		Planet planetD5 = new Planet(5, Color.BLUE);
-		Planet planetD6 = new Planet(6, Color.BLUE);
-		Planet planetD7 = new Planet(7, Color.RED);
-		Planet planetD8 = new Planet(8, Color.RED);
-		Planet planetD9 = new Planet(9, Color.YELLOW);
+		Planet planetD1 = new Planet(Galaxy.C,1, Color.BLUE);
+		Planet planetD2 = new Planet(Galaxy.C,2, Color.BLUE);
+		Planet planetD3 = new Planet(Galaxy.C,3, Color.BLUE);
+		Planet planetD4 = new Planet(Galaxy.C,4, Color.BLUE);
+		Planet planetD5 = new Planet(Galaxy.C,5, Color.BLUE);
+		Planet planetD6 = new Planet(Galaxy.C,6, Color.BLUE);
+		Planet planetD7 = new Planet(Galaxy.C,7, Color.RED);
+		Planet planetD8 = new Planet(Galaxy.C,8, Color.RED);
+		Planet planetD9 = new Planet(Galaxy.C,9, Color.YELLOW);
 
 		planets.add(planetD1);
 		planets.add(planetD2);
@@ -115,15 +118,15 @@ public class CreateUniverse {
 	public ArrayList<Planet> createGalaxyE(){
 		//creating galaxy E
 		ArrayList<Planet> planets = new ArrayList<>();
-		Planet planetE1 = new Planet(1, Color.GREEN);
-		Planet planetE2 = new Planet(2, Color.GREEN);
-		Planet planetE3 = new Planet(3, Color.BLUE);
-		Planet planetE4 = new Planet(4, Color.RED);
-		Planet planetE5 = new Planet(5, Color.YELLOW);
-		Planet planetE6 = new Planet(6, Color.YELLOW);
-		Planet planetE7 = new Planet(7, Color.GREEN);
-		Planet planetE8 = new Planet(8, Color.GREEN);
-		Planet planetE9 = new Planet(9, Color.YELLOW);
+		Planet planetE1 = new Planet(Galaxy.D,1, Color.GREEN);
+		Planet planetE2 = new Planet(Galaxy.D,2, Color.GREEN);
+		Planet planetE3 = new Planet(Galaxy.D,3, Color.BLUE);
+		Planet planetE4 = new Planet(Galaxy.D,4, Color.RED);
+		Planet planetE5 = new Planet(Galaxy.D,5, Color.YELLOW);
+		Planet planetE6 = new Planet(Galaxy.D,6, Color.YELLOW);
+		Planet planetE7 = new Planet(Galaxy.D,7, Color.GREEN);
+		Planet planetE8 = new Planet(Galaxy.D,8, Color.GREEN);
+		Planet planetE9 = new Planet(Galaxy.D,9, Color.YELLOW);
 
 		planets.add(planetE1);
 		planets.add(planetE2);
