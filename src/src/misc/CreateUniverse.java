@@ -12,6 +12,7 @@ public class CreateUniverse {
 	public ArrayList<Planet> createGalaxyA(){
 		//creating galaxy A
 		ArrayList<Planet> planets = new ArrayList<>();
+
 		Planet planetA1 = new Planet(Galaxy.A, 1, Color.RED);
 		Planet planetA2 = new Planet(Galaxy.A, 2, Color.BLUE);
 		Planet planetA3 = new Planet(Galaxy.A, 3, Color.YELLOW);
@@ -21,6 +22,9 @@ public class CreateUniverse {
 		Planet planetA7 = new Planet(Galaxy.A,7, Color.RED);
 		Planet planetA8 = new Planet(Galaxy.A,8, Color.RED);
 		Planet planetA9 = new Planet(Galaxy.A,9, Color.YELLOW);
+
+
+		planetA1.setGalaxySet();
 
 
 

@@ -14,15 +14,19 @@ public class Planet implements Comparable<Planet> {
 	private Set<Galaxy> galaxySet;
 
 
-	public Planet(Galaxy galaxy, int id, Color color, Set<Planet> planetSet, Set<Galaxy> galaxySet) {
+	public Planet(Galaxy galaxy, int id, Color color) {
 		this.galaxy = galaxy;
 		this.id = id;
 		this.color = color;
-		this.planetSet = planetSet;
-		this.galaxySet = galaxySet;
 	}
 
+	public void addPlanetSet(Planet planet) {
+		this.planetSet.add(planet);
+	}
 
+	public void addGalaxySet(Galaxy galaxy) {
+		this.galaxySet.add(galaxy);
+	}
 
 	public int getId() {
 		return id;
