@@ -1,35 +1,20 @@
-package planetsystem;
+package misc;
 
 import misc.Color;
+import planetsystem.Planet;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class CreateUniverse {
 
-
-	public ArrayList<Galaxy> generateUniverse(){
-		ArrayList<Galaxy> universe = new ArrayList<>();
-		universe.add(createGalaxyA());
-		universe.add(creataGalaxyB());
-		universe.add(createGalaxyC());
-		universe.add(createGalaxyD());
-		universe.add(createGalaxyE());
-		universe.add(createGalaxyF());
-		universe.add(createGalaxyG());
-		universe.add(createGalaxyH());
-		universe.add(createGalaxyK());
-
-		return universe;
-	}
-
-	public Galaxy createGalaxyA(){
+	public ArrayList<Planet> createGalaxyA(){
 		//creating galaxy A
 		ArrayList<Planet> planets = new ArrayList<>();
-		Planet planetA1 = new Planet(1, Color.RED);
-		Planet planetA2 = new Planet(2, Color.BLUE);
-		Planet planetA3 = new Planet(3, Color.YELLOW);
-		Planet planetA4 = new Planet(4, Color.RED);
+		Planet planetA1 = new Planet(Galaxy.A, 1, Color.RED);
+		Planet planetA2 = new Planet(Galaxy.A, 2, Color.BLUE);
+		Planet planetA3 = new Planet(Galaxy.A, 3, Color.YELLOW);
+		Planet planetA4 = new Planet(Galaxy.A, 4, Color.RED);
 		Planet planetA5 = new Planet(5, Color.RED);
 		Planet planetA6 = new Planet(6, Color.YELLOW);
 		Planet planetA7 = new Planet(7, Color.RED);
@@ -46,11 +31,10 @@ public class CreateUniverse {
 		planets.add(planetA8);
 		planets.add(planetA9);
 
-		Galaxy galaxyA  = new Galaxy('A', planets);
-		return galaxyA;
+		return planets;
 	}
 
-	public Galaxy creataGalaxyB(){
+	public ArrayList<Planet> createGalaxyB(){
 		//creating galaxy B
 		ArrayList<Planet> planets = new ArrayList<>();
 		Planet planetB1 = new Planet(1, Color.RED);
@@ -73,11 +57,10 @@ public class CreateUniverse {
 		planets.add(planetB8);
 		planets.add(planetB9);
 
-		Galaxy galaxyB = new Galaxy('B', planets);
-		return galaxyB;
+		return planets;
 	}
 
-	public Galaxy createGalaxyC(){
+	public ArrayList<Planet> createGalaxyC(){
 		//creating galaxy C
 		ArrayList<Planet> planets = new ArrayList<>();
 		Planet planetC1 = new Planet(1, Color.RED);
@@ -100,11 +83,10 @@ public class CreateUniverse {
 		planets.add(planetC8);
 		planets.add(planetC9);
 
-		Galaxy galaxyC  = new Galaxy('C', planets);
-		return galaxyC;
+		return planets;
 	}
 
-	public Galaxy createGalaxyD(){
+	public ArrayList<Planet> createGalaxyD(){
 		//creating galaxy D
 		ArrayList<Planet> planets = new ArrayList<>();
 		Planet planetD1 = new Planet(1, Color.BLUE);
@@ -127,11 +109,10 @@ public class CreateUniverse {
 		planets.add(planetD8);
 		planets.add(planetD9);
 
-		Galaxy galaxyD  = new Galaxy('D', planets);
-		return galaxyD;
+		return planets;
 	}
 
-	public Galaxy createGalaxyE(){
+	public ArrayList<Planet> createGalaxyE(){
 		//creating galaxy E
 		ArrayList<Planet> planets = new ArrayList<>();
 		Planet planetE1 = new Planet(1, Color.GREEN);
@@ -154,11 +135,10 @@ public class CreateUniverse {
 		planets.add(planetE8);
 		planets.add(planetE9);
 
-		Galaxy galaxyE = new Galaxy('E', planets);
-		return galaxyE;
+		return planets;
 	}
 
-	public Galaxy createGalaxyF(){
+	public ArrayList<Planet> createGalaxyF(){
 		//creating galaxy F
 		ArrayList<Planet> planets = new ArrayList<>();
 		Planet planetF1 = new Planet(1, Color.BLUE);
@@ -181,11 +161,10 @@ public class CreateUniverse {
 		planets.add(planetF8);
 		planets.add(planetF9);
 
-		Galaxy galaxyF  = new Galaxy('F', planets);
-		return galaxyF;
+		return planets;
 	}
 
-	public Galaxy createGalaxyG(){
+	public ArrayList<Planet> createGalaxyG(){
 		//creating galaxy G
 		ArrayList<Planet> planets = new ArrayList<>();
 		Planet planetG1 = new Planet(1, Color.GREEN);
@@ -208,11 +187,10 @@ public class CreateUniverse {
 		planets.add(planetG8);
 		planets.add(planetG9);
 
-		Galaxy galaxyG  = new Galaxy('G', planets);
-		return galaxyG;
+		return planets;
 	}
 
-	public Galaxy createGalaxyH(){
+	public ArrayList<Planet> createGalaxyH(){
 		//creating galaxy H
 		ArrayList<Planet> planets = new ArrayList<>();
 		Planet planetH1 = new Planet(1, Color.YELLOW);
@@ -235,11 +213,10 @@ public class CreateUniverse {
 		planets.add(planetH8);
 		planets.add(planetH9);
 
-		Galaxy galaxyH  = new Galaxy('H', planets);
-		return galaxyH;
+		return planets;
 	}
 
-	public Galaxy createGalaxyK(){
+	public ArrayList<Planet> createGalaxyK(){
 		//creating galaxy K
 		ArrayList<Planet> planets = new ArrayList<>();
 		Planet planetK1 = new Planet(1, Color.YELLOW);
@@ -262,8 +239,7 @@ public class CreateUniverse {
 		planets.add(planetK8);
 		planets.add(planetK9);
 
-		Galaxy galaxyK = new Galaxy('K', planets);
-		return galaxyK;
+		return planets;
 	}
 
 	
