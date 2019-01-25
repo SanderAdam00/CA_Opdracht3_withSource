@@ -49,22 +49,6 @@ public class Universe {
         return planet.getPlanetSet();
     }
 
-    public enum A_Neighbours{
-
-    }
-
-    public enum B_Neighbours{
-        A, D, K, F
-    }
-
-    public enum C_Neighbours{
-        A, D, E
-    }
-
-    public enum D_Neighbours{
-        A, B, C, F
-    }
-
     public enum E_Neighbours{
         C, F, G
     }

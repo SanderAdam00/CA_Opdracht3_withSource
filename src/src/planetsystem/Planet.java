@@ -31,10 +31,20 @@ public class Planet implements Comparable<Planet> {
 				galaxySet.add(Galaxy.D);
 				break;
 			case B:
-
-                A, D, K, F
-
-
+				galaxySet.add(Galaxy.A);
+				galaxySet.add(Galaxy.D);
+				galaxySet.add(Galaxy.K);
+				galaxySet.add(Galaxy.F);
+			case C:
+				galaxySet.add(Galaxy.A);
+				galaxySet.add(Galaxy.D);
+				galaxySet.add(Galaxy.K);
+				galaxySet.add(Galaxy.F);
+			case D:
+				galaxySet.add(Galaxy.A);
+				galaxySet.add(Galaxy.D);
+				galaxySet.add(Galaxy.E);
+				galaxySet.add(Galaxy.F);
 
 		}
 	}
