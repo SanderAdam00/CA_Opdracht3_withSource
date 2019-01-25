@@ -23,10 +23,14 @@ public class CreateUniverse {
 		Planet planetA8 = new Planet(Galaxy.A,8, Color.RED);
 		Planet planetA9 = new Planet(Galaxy.A,9, Color.YELLOW);
 
-
-		planetA1.setGalaxySet();
-
-
+		planetA1.addPlanetSet(new Planet[]{planetA2, planetA4});
+		planetA2.addPlanetSet(new Planet[]{planetA1});
+		planetA3.addPlanetSet(new Planet[]{planetA4});
+		planetA4.addPlanetSet(new Planet[]{planetA1});
+		planetA6.addPlanetSet(new Planet[]{planetA3, planetA9});
+		planetA7.addPlanetSet(new Planet[]{planetA8});
+		planetA8.addPlanetSet(new Planet[]{planetA7});
+		planetA9.addPlanetSet(new Planet[]{planetA6});
 
 		planets.add(planetA1);
 		planets.add(planetA2);
@@ -44,15 +48,24 @@ public class CreateUniverse {
 	public ArrayList<Planet> createGalaxyB(){
 		//creating galaxy B
 		ArrayList<Planet> planets = new ArrayList<>();
-		Planet planetB1 = new Planet(1, Color.RED);
-		Planet planetB2 = new Planet(2, Color.RED);
-		Planet planetB3 = new Planet(3, Color.YELLOW);
-		Planet planetB4 = new Planet(4, Color.YELLOW);
-		Planet planetB5 = new Planet(5, Color.RED);
-		Planet planetB6 = new Planet(6, Color.RED);
-		Planet planetB7 = new Planet(7, Color.BLUE);
-		Planet planetB8 = new Planet(8, Color.RED);
-		Planet planetB9 = new Planet(9, Color.GREEN);
+		Planet planetB1 = new Planet(Galaxy.B, 1, Color.RED);
+		Planet planetB2 = new Planet(Galaxy.B, 2, Color.RED);
+		Planet planetB3 = new Planet(Galaxy.B, 3, Color.YELLOW);
+		Planet planetB4 = new Planet(Galaxy.B, 4, Color.YELLOW);
+		Planet planetB5 = new Planet(Galaxy.B, 5, Color.RED);
+		Planet planetB6 = new Planet(Galaxy.B, 6, Color.RED);
+		Planet planetB7 = new Planet(Galaxy.B, 7, Color.BLUE);
+		Planet planetB8 = new Planet(Galaxy.B, 8, Color.RED);
+		Planet planetB9 = new Planet(Galaxy.B, 9, Color.GREEN);
+
+		planetB1.addPlanetSet(new Planet[]{planetB2, planetB4});
+		planetB2.addPlanetSet(new Planet[]{planetB1, planetB4});
+		planetB3.addPlanetSet(new Planet[]{planetB2});
+		planetB4.addPlanetSet(new Planet[]{planetB1, planetB7});
+		planetB5.addPlanetSet(new Planet[]{planetB6, planetB8});
+		planetB6.addPlanetSet(new Planet[]{planetB5});
+		planetB7.addPlanetSet(new Planet[]{planetB4});
+		planetB8.addPlanetSet(new Planet[]{planetB5});
 
 		planets.add(planetB1);
 		planets.add(planetB2);
@@ -80,6 +93,11 @@ public class CreateUniverse {
 		Planet planetC8 = new Planet(Galaxy.C,8, Color.GREEN);
 		Planet planetC9 = new Planet(Galaxy.C,9, Color.YELLOW);
 
+		planetC1.addPlanetSet(new Planet[]{planetC4});
+		planetC2.addPlanetSet(new Planet[]{planetC3});
+		planetC3.addPlanetSet(new Planet[]{planetC2});
+		planetC4.addPlanetSet(new Planet[]{planetC1});
+
 		planets.add(planetC1);
 		planets.add(planetC2);
 		planets.add(planetC3);
@@ -105,6 +123,13 @@ public class CreateUniverse {
 		Planet planetD7 = new Planet(Galaxy.C,7, Color.RED);
 		Planet planetD8 = new Planet(Galaxy.C,8, Color.RED);
 		Planet planetD9 = new Planet(Galaxy.C,9, Color.YELLOW);
+
+		planetD1.addPlanetSet(new Planet[]{planetD4});
+		planetD2.addPlanetSet(new Planet[]{planetD3});
+		planetD4.addPlanetSet(new Planet[]{planetD1});
+		planetD5.addPlanetSet(new Planet[]{planetD6});
+		planetD6.addPlanetSet(new Planet[]{planetD5, planetD9});
+		planetD7.addPlanetSet(new Planet[]{planetD8});
 
 		planets.add(planetD1);
 		planets.add(planetD2);
