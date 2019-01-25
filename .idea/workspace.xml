@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3970b-81ee-4fd1-a8db-3cbd46198d4a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/travelrelated/RTram.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/travelrelated/Shuttle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/travelrelated/Traveler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/planetsystem/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/planetsystem/Planet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
-                <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchPlanet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -33,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Universe.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -59,15 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Planet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Planet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Planet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="547">
+              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#846#847#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#927#928#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#985#986#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
                 <element signature="e#645#646#0" expanded="true" />
                 <element signature="e#661#662#0" expanded="true" />
                 <element signature="e#689#690#0" expanded="true" />
@@ -109,10 +120,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/src/planetsystem/Universe.java" />
-        <option value="$PROJECT_DIR$/src/src/planetsystem/Planet.java" />
         <option value="$PROJECT_DIR$/src/src/planetsystem/Galaxy.java" />
         <option value="$PROJECT_DIR$/src/src/planetsystem/CreateUniverse.java" />
         <option value="$PROJECT_DIR$/src/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/src/planetsystem/Planet.java" />
       </list>
     </option>
   </component>
@@ -127,7 +138,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="952" />
-    <option name="width" value="976" />
+    <option name="width" value="977" />
     <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -266,7 +277,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137000" />
+    <option name="totallyTimeSpent" value="345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -325,26 +336,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Shuttle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java" />
     <entry file="file://$PROJECT_DIR$/src/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -371,8 +369,14 @@
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
             <element signature="e#645#646#0" expanded="true" />
             <element signature="e#661#662#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
@@ -398,7 +402,7 @@
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -416,8 +420,14 @@
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
             <element signature="e#645#646#0" expanded="true" />
             <element signature="e#661#662#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
@@ -435,36 +445,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/RTram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Shuttle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/RTram.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Shuttle.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java" />
     <entry file="file://$PROJECT_DIR$/src/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -475,8 +464,14 @@
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
             <element signature="e#645#646#0" expanded="true" />
             <element signature="e#661#662#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
@@ -501,44 +496,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/RTram.java">
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/RTram.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Shuttle.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state>
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Shuttle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -548,7 +522,7 @@
         <state relative-caret-position="63">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -557,7 +531,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -567,7 +541,7 @@
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -576,7 +550,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -586,7 +560,7 @@
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -595,7 +569,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -605,7 +579,7 @@
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -614,7 +588,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -624,7 +598,7 @@
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -633,7 +607,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -643,7 +617,7 @@
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -653,7 +627,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,7 +637,7 @@
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,7 +653,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,37 +661,9 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/RTram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Shuttle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Universe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/RTram.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Shuttle.java" />
+    <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java" />
     <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Galaxy.java" />
     <entry file="file://$PROJECT_DIR$/src/src/planetsystem/CreateUniverse.java" />
     <entry file="file://$PROJECT_DIR$/src/src/misc/Galaxy.java">
@@ -727,30 +673,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Planet.java">
+    <entry file="file://$PROJECT_DIR$/src/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Universe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
             <element signature="e#645#646#0" expanded="true" />
             <element signature="e#661#662#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
             <element signature="e#708#709#0" expanded="true" />
             <element signature="e#754#755#0" expanded="true" />
             <element signature="e#769#770#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding>
-            <marker date="1548445298900" expanded="true" signature="74:77" ph="{}" />
           </folding>
         </state>
       </provider>
