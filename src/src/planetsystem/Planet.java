@@ -3,6 +3,7 @@ package planetsystem;
 import misc.Galaxy;
 import misc.Color;
 
+import java.util.Collections;
 import java.util.Set;
 
 public class Planet implements Comparable<Planet> {
@@ -20,8 +21,10 @@ public class Planet implements Comparable<Planet> {
 		this.color = color;
 	}
 
-	public void addPlanetSet(Planet planet) {
-		this.planetSet.add(planet);
+	public void addPlanetSet(Planet[] planet) {
+		for (int i = 0; i < planet.length; i++) {
+			this.planetSet.add(planet[i]);
+		}
 	}
 
 	public void addGalaxySet(Galaxy galaxy) {
