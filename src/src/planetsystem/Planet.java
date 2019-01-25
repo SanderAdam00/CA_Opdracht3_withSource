@@ -31,7 +31,7 @@ public class Planet implements Comparable<Planet> {
 				galaxySet.add(Galaxy.D);
 				break;
 			case B:
-
+				
                 A, D, K, F
 
 
