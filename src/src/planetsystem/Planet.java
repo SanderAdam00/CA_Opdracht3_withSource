@@ -32,6 +32,8 @@ public class Planet implements Comparable<Planet> {
 				break;
 			case B:
 
+                A, D, K, F
+
 
 
 		}
