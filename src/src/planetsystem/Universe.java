@@ -1,6 +1,7 @@
 package planetsystem;
 
 import misc.CreateUniverse;
+import misc.Galaxy;
 
 import java.util.ArrayList;
 
@@ -16,10 +17,8 @@ public class Universe {
     private ArrayList<Planet> GalaxyH;
     private ArrayList<Planet> GalaxyK;
 
-    private Planet planet;
     private Planet goal;
     private Planet start;
-
 
     public Universe() {
         CreateUniverse universe = new CreateUniverse();
@@ -33,12 +32,11 @@ public class Universe {
         GalaxyH = universe.createGalaxyH();
         GalaxyK = universe.createGalaxyK();
 
-        goal = GalaxyA.get(7); // hardcoded goal
-        start = GalaxyA.get(8); // hardcoded start
+        goal = GalaxyA.get(6); // hardcoded goal
+        start = GalaxyA.get(7); // hardcoded start
     }
 
-
-    public boolean isGoal (Planet position){
+    public boolean isGoal(Planet position) {
         return position == goal;
     }
 
@@ -50,8 +48,34 @@ public class Universe {
         return start;
     }
 
-    public ArrayList<Planet> getNeighbours(Planet planet){
+    public ArrayList<Planet> getNeighbours(Planet planet) {
         return planet.getPlanetList();
     }
+
+    public ArrayList<Planet> getGalaxy(Galaxy galaxy) {
+        switch (galaxy) {
+            case A:
+                return GalaxyA;
+            case B:
+                return GalaxyB;
+            case C:
+                return GalaxyC;
+            case D:
+                return GalaxyD;
+            case E:
+                return GalaxyD;
+            case F:
+                return GalaxyF;
+            case G:
+                return GalaxyG;
+            case H:
+                return GalaxyH;
+            case K:
+                return GalaxyK;
+            default:
+                return null;
+        }
+    }
+
 
 }
