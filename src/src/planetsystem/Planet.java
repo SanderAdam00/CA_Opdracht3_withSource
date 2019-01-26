@@ -46,6 +46,7 @@ public class Planet implements Comparable<Planet> {
 				galaxySet.add(Galaxy.E);
 				galaxySet.add(Galaxy.F);
 
+				
 		}
 	}
 
