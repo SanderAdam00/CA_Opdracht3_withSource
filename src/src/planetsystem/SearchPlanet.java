@@ -27,6 +27,7 @@ public class SearchPlanet {
 	public ArrayList<Planet> dfs(Planet start, ArrayList<Planet> visited) {
 		ArrayList<Planet> solution;
 		visited.add(start);
+        System.out.println("current: " + start.getGalaxy() + start.getId());
 		if (universe.isGoal(start)) {
 			solution = new ArrayList<>();
 			solution.add(start);
@@ -47,16 +48,18 @@ public class SearchPlanet {
 			for (Galaxy galaxy : galaxyNeighbours) {
 				ArrayList<Planet> neighbourGalaxy = universe.getGalaxy(galaxy);
 				Planet rTramPlanet = neighbourGalaxy.get(start.getId() - 1);
-				if(universe.isGoal(rTramPlanet)){
-					solution = new ArrayList<>();
-					solution.add(rTramPlanet);
-					return solution;
-				} else if(rTramPlanet.getColor() == start.getColor()){
-					 dfs(rTramPlanet, visited);
+				 if(rTramPlanet.getColor() == start.getColor()){
+//                    if(universe.isGoal(rTramPlanet)){
+//                        solution = new ArrayList<>();
+//                        solution.add(rTramPlanet);
+//                        System.out.println("I reached here");
+//                        return solution;
+//                    }
 				}
 			}
+            System.out.println("Checked all galaxies");
 		}
 
-		return new ArrayList<Planet>();
+		return new ArrayList<Planet>(); // no solution
 	}
 }
