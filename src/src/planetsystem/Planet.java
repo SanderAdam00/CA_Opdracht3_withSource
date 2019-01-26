@@ -23,8 +23,8 @@ public class Planet implements Comparable<Planet> {
 	}
 
 
-	public Set<Galaxy> addGalaxyNeighbours(Galaxy galaxy){
-		switch (galaxy){
+	public Set<Galaxy> addGalaxyNeighbours(Galaxy galaxy) {
+		switch (galaxy) {
 			case A:
 				galaxySet.add(Galaxy.A);
 				galaxySet.add(Galaxy.B);
@@ -45,10 +45,6 @@ public class Planet implements Comparable<Planet> {
 				galaxySet.add(Galaxy.D);
 				galaxySet.add(Galaxy.E);
 				galaxySet.add(Galaxy.F);
-				break;
-			case C:
-				break;
-			case D:
 				break;
 			case E:
 				galaxySet.add(Galaxy.C);
@@ -76,8 +72,8 @@ public class Planet implements Comparable<Planet> {
 				break;
 
 
-
 		}
+		return galaxySet;
 	}
 
 	public void addPlanetSet(Planet[] planet) {
@@ -95,6 +91,11 @@ public class Planet implements Comparable<Planet> {
 	public Set<Planet> getPlanetSet() {
 		return planetSet;
 	}
+
+	public Set<Galaxy> getGalaxySet() {
+		return galaxySet;
+	}
+
 
 
 	public int getId() {
