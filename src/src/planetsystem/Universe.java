@@ -33,7 +33,7 @@ public class Universe {
         GalaxyK = universe.createGalaxyK();
 
         goal = GalaxyA.get(6); // hardcoded goal
-        start = GalaxyA.get(7); // hardcoded start
+        start = GalaxyK.get(7); // hardcoded start
     }
 
     public boolean isGoal(Planet position) {
