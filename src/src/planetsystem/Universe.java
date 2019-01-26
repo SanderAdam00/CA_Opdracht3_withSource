@@ -1,10 +1,8 @@
 package planetsystem;
 
 import misc.CreateUniverse;
-import misc.Galaxy;
 
 import java.util.ArrayList;
-import java.util.Set;
 
 public class Universe {
     // all 9 galaxies
@@ -35,8 +33,8 @@ public class Universe {
         GalaxyH = universe.createGalaxyH();
         GalaxyK = universe.createGalaxyK();
 
-        goal = GalaxyA.get(2); // hardcoded goal
-        start = GalaxyH.get(5); // hardcoded start
+        goal = GalaxyA.get(7); // hardcoded goal
+        start = GalaxyA.get(8); // hardcoded start
     }
 
 
@@ -52,8 +50,8 @@ public class Universe {
         return start;
     }
 
-    public Set<Planet> getNeighbours(Planet planet){
-        return planet.getPlanetSet();
+    public ArrayList<Planet> getNeighbours(Planet planet){
+        return planet.getPlanetList();
     }
 
 }

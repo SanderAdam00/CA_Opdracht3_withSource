@@ -3,16 +3,15 @@ package planetsystem;
 import misc.Galaxy;
 import misc.Color;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Set;
 
 public class Planet implements Comparable<Planet> {
 
 	private Galaxy galaxy;
 	private int id;
 	private Color color;
-	private Set<Planet> planetSet;
+	private ArrayList<Planet> planetList;
 	private Galaxy[] galaxySet;
 
 	public Planet(Galaxy galaxy, int id, Color color) {
@@ -55,7 +54,8 @@ public class Planet implements Comparable<Planet> {
 	}
 
 	public void addPlanetSet(Planet[] planet) {
-		this.planetSet.addAll(Arrays.asList(planet));
+		planetList = new ArrayList<>();
+		this.planetList.addAll(Arrays.asList(planet));
 	}
 
 
@@ -63,8 +63,8 @@ public class Planet implements Comparable<Planet> {
 		return galaxy;
 	}
 
-	public Set<Planet> getPlanetSet() {
-		return planetSet;
+	public ArrayList<Planet> getPlanetList() {
+		return planetList;
 	}
 
     public Galaxy[] getGalaxySet() {

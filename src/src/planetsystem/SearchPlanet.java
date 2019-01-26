@@ -28,21 +28,25 @@ public class SearchPlanet {
 		if (universe.isGoal(start)) {
 			solution = new ArrayList<>();
 			solution.add(start);
+			System.out.println("Start was solution");
 			return solution;
 		} else {
-			Set<Planet> neighbours = universe.getNeighbours(start);
+			ArrayList<Planet> neighbours = universe.getNeighbours(start);
 			for (Planet neighbour : neighbours) {
 				if (!visited.contains(neighbour)) {
 					if (neighbour.getColor().equals(start.getColor())) {
 						solution = dfs(neighbour, visited);
 						if (universe.isGoal(neighbour)) {
 							solution.add(neighbour);
+							System.out.println("Neighbour was solution");
 							return solution;
 						}
 					}
 				}
 			}
 		}
+
+
 		return new ArrayList<Planet>();
 	}
 }

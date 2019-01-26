@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3970b-81ee-4fd1-a8db-3cbd46198d4a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/src/planetsystem/Planet$1.class" afterPath="$PROJECT_DIR$/out/production/src/planetsystem/Planet$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/src/planetsystem/Planet.class" afterPath="$PROJECT_DIR$/out/production/src/planetsystem/Planet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/src/planetsystem/SearchPlanet.class" afterPath="$PROJECT_DIR$/out/production/src/planetsystem/SearchPlanet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/src/planetsystem/Universe.class" afterPath="$PROJECT_DIR$/out/production/src/planetsystem/Universe.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/planetsystem/Planet.java" afterPath="$PROJECT_DIR$/src/src/planetsystem/Planet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java" afterPath="$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java" />
@@ -26,24 +30,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Universe.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Universe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Universe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="123">
+              <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
               <folding>
-                <element signature="e#1440#1441#0" expanded="true" />
-                <element signature="e#1484#1485#0" expanded="true" />
+                <element signature="e#1404#1405#0" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchPlanet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SearchPlanet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+            <state relative-caret-position="166">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,8 +56,8 @@
       <file leaf-file-name="CreateUniverse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/misc/CreateUniverse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +68,8 @@
       <file leaf-file-name="Galaxy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/misc/Galaxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="63">
+              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -74,24 +78,21 @@
       <file leaf-file-name="Planet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Planet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="891">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
-                <element signature="e#1640#1641#0" expanded="true" />
-                <element signature="e#1691#1692#0" expanded="true" />
-                <element signature="e#1736#1737#0" expanded="true" />
-                <element signature="e#1787#1788#0" expanded="true" />
-                <element signature="e#1817#1818#0" expanded="true" />
-                <element signature="e#1837#1838#0" expanded="true" />
-                <element signature="e#1875#1876#0" expanded="true" />
-                <element signature="e#1898#1899#0" expanded="true" />
-                <element signature="e#1936#1937#0" expanded="true" />
-                <element signature="e#1959#1960#0" expanded="true" />
-                <marker date="1548522532192" expanded="false" signature="1983:1988" ph=" { " />
-                <marker date="1548522532192" expanded="false" signature="1998:2001" ph=" }" />
-                <marker date="1548522532192" expanded="false" signature="2027:2032" ph=" { " />
-                <marker date="1548522532192" expanded="false" signature="2045:2048" ph=" }" />
-                <marker date="1548522532192" expanded="false" signature="2106:2109" ph=" }" />
+                <element signature="e#1565#1566#0" expanded="true" />
+                <element signature="e#1585#1586#0" expanded="true" />
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#1654#1655#0" expanded="true" />
+                <element signature="e#1692#1693#0" expanded="true" />
+                <element signature="e#1724#1725#0" expanded="true" />
+                <marker date="1548529270658" expanded="false" signature="1749:1754" ph=" { " />
+                <marker date="1548529270658" expanded="false" signature="1764:1767" ph=" }" />
+                <marker date="1548529270658" expanded="false" signature="1793:1798" ph=" { " />
+                <marker date="1548529270658" expanded="false" signature="1811:1814" ph=" }" />
+                <marker date="1548529270658" expanded="false" signature="1858:1863" ph=" { " />
+                <marker date="1548529270658" expanded="false" signature="1872:1875" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -126,8 +127,8 @@
         <option value="$PROJECT_DIR$/src/src/planetsystem/CreateUniverse.java" />
         <option value="$PROJECT_DIR$/src/src/Main.java" />
         <option value="$PROJECT_DIR$/src/src/planetsystem/Planet.java" />
-        <option value="$PROJECT_DIR$/src/src/planetsystem/Universe.java" />
         <option value="$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java" />
+        <option value="$PROJECT_DIR$/src/src/planetsystem/Universe.java" />
       </list>
     </option>
   </component>
@@ -344,13 +345,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -360,7 +361,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39978448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -374,7 +375,19 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java</url>
+          <line>24</line>
+          <properties class="planetsystem.SearchPlanet" method="dfs">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -383,21 +396,18 @@
         <state relative-caret-position="714">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <marker date="1548522532192" expanded="false" signature="1983:1988" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="1998:2001" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2027:2032" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="2045:2048" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2106:2109" ph=" }" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <marker date="1548529270658" expanded="false" signature="1749:1754" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1764:1767" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1793:1798" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1811:1814" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1858:1863" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1872:1875" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -432,21 +442,18 @@
         <state relative-caret-position="275">
           <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <marker date="1548522532192" expanded="false" signature="1983:1988" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="1998:2001" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2027:2032" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="2045:2048" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2106:2109" ph=" }" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <marker date="1548529270658" expanded="false" signature="1749:1754" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1764:1767" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1793:1798" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1811:1814" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1858:1863" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1872:1875" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -471,21 +478,18 @@
         <state relative-caret-position="294">
           <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <marker date="1548522532192" expanded="false" signature="1983:1988" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="1998:2001" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2027:2032" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="2045:2048" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2106:2109" ph=" }" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <marker date="1548529270658" expanded="false" signature="1749:1754" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1764:1767" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1793:1798" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1811:1814" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1858:1863" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1872:1875" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -513,21 +517,18 @@
         <state relative-caret-position="294">
           <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <marker date="1548522532192" expanded="false" signature="1983:1988" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="1998:2001" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2027:2032" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="2045:2048" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2106:2109" ph=" }" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <marker date="1548529270658" expanded="false" signature="1749:1754" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1764:1767" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1793:1798" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1811:1814" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1858:1863" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1872:1875" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -683,64 +684,6 @@
     <entry file="file://$PROJECT_DIR$/src/src/travelrelated/Traveler.java" />
     <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Galaxy.java" />
     <entry file="file://$PROJECT_DIR$/src/src/planetsystem/CreateUniverse.java" />
-    <entry file="file://$PROJECT_DIR$/src/src/misc/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/misc/Galaxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <marker date="1548522532192" expanded="false" signature="1983:1988" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="1998:2001" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2027:2032" ph=" { " />
-            <marker date="1548522532192" expanded="false" signature="2045:2048" ph=" }" />
-            <marker date="1548522532192" expanded="false" signature="2106:2109" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/misc/CreateUniverse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -749,14 +692,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/misc/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <marker date="1548529270658" expanded="false" signature="1749:1754" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1764:1767" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1793:1798" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1811:1814" ph=" }" />
+            <marker date="1548529270658" expanded="false" signature="1858:1863" ph=" { " />
+            <marker date="1548529270658" expanded="false" signature="1872:1875" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/misc/CreateUniverse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/misc/Galaxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/planetsystem/Universe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="123">
+          <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
           <folding>
-            <element signature="e#1440#1441#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/planetsystem/SearchPlanet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
