@@ -32,8 +32,11 @@ public class Universe {
         GalaxyH = universe.createGalaxyH();
         GalaxyK = universe.createGalaxyK();
 
-        goal = GalaxyF.get(8); // hardcoded goal
-        start = GalaxyG.get(0); // hardcoded start
+        /**
+         * Een goal en start die gehardcode zijn. Deze hebben we regelmatig veranderd om te testen.
+         */
+        start = GalaxyD.get(3); // hardcoded start
+        goal = GalaxyD.get(7); // hardcoded goal
     }
 
     public boolean isGoal(Planet position) {

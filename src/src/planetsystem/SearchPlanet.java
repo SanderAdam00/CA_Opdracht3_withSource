@@ -14,13 +14,20 @@ public class SearchPlanet {
     private Planet finish_point;
     private Planet rTramPlanet;
 
-
+    /**
+     * In deze constructor definiëren we de universe, maar ook wat de startingpoint en de finishingpoint moet zijn.
+     */
     public SearchPlanet(Universe universe) {
         this.universe = universe;
         starting_point = universe.getStart();
         finish_point = universe.getGoal();
     }
 
+    /**
+     * Als de startingPoint en de finisingPoint zijn gedefinieerd, dan kunnen we beginnen met zoeken. startSearching() wordt
+     * dan aangeroepen en in startSearching() staat een if-statement, als er geen solution gevonden wordt, dan print hij dat uit
+     * en stopt het programma, om eem mogelijke cycle te voorkomen.
+     */
     public LinkedList<Planet> startSearching() {
         LinkedList<Planet> solution = dfs(starting_point, new ArrayList<Planet>());
         if (solution.isEmpty()){
@@ -29,7 +36,14 @@ public class SearchPlanet {
         return solution;
     }
 
-
+    /**
+     * De dfs methode is waar het zoekwerk gebeurt. In de eerste instantie kijken we of start niet bij toeval als goal
+     * is opgegeven. Als dit zo is, wordt er weergegeven dat de oplossing is gevonden en sluit het programma zich af.
+     * Als start niet de goal is, dan kijken we verder. We kijken eerst of de directe buren (als de planeet deze heeft)
+     * de goal kan zijn. Is dit niet het geval, dan moet in deze puzzel het principe rTram toegepast worden. Het kan ook
+     * zijn dat het programma helamaal geen solution vindt, als dit het geval is, dan wordt er een lege array gereturned
+     * en wordt het programma afgesloten.
+     */
     public LinkedList<Planet> dfs(Planet start, ArrayList<Planet> visited) {
         LinkedList<Planet> solution;
         visited.add(start);
@@ -37,7 +51,7 @@ public class SearchPlanet {
         if (universe.isGoal(start)) {
             solution = new LinkedList<>();
             solution.add(start);
-            System.out.println("Start was solution");
+            System.out.println("We found the solution");
             return solution;
         } else {
             ArrayList<Planet> neighbours = getAllNeighbours(start);
@@ -51,14 +65,20 @@ public class SearchPlanet {
                 }
             }
         }
-   /*     if(!universe.isGoal(start)) {
-            rTram();
-        }
-        System.out.println("Checked all galaxies");*/
-        //visited.remove(start);
         return new LinkedList<>(); // no solution
     }
 
+    /**
+     * getAllNeighbours is de functie die kijkt wat de naaste planeetburen en wat de naaste buur galaxies zijn. Als een
+     * planeet geen naaste buren heeft en wel via het prinicpe rTram naar een andere galaxy kan, dan gebeurt dat via
+     * deze functie. Er wordt een Galaxy[] aangemaakt en er de galaxySet wordt daarvoor aangeroepen om de array op te
+     * vullen met de juiste buren. Daarna gaat hij door de foreach loop en pakt hij een ArrayList en vult het op met de
+     * galaxies, waarna bij rTramPlanet van galaxy naar galaxy wordt "gesprongen" door te kijken naar de directe
+     * neighbourGalaxy van de planet waarvan ge-rTrammed wordt. Er moet natuurlijk ook gekeken worden of er überhaupt
+     * ge-rTrammed kan worden, sinds blauw niet naar groen kan en vice versa. Dat wordt gedaan in de ifstatement
+     * onder de check van de naaste neighbourGalaxy. Daar wordt de kleur met elkaar vergeleken en als er ge-rTrammed
+     * kan worden, dan wordt het toegevoegd aan allNeighbours. De lijst die de galaxyburen bijhoudt.
+     */
     public ArrayList<Planet> getAllNeighbours(Planet currentPlanet) {
         ArrayList<Planet> allNeighbours = new ArrayList<>();
         allNeighbours.addAll(currentPlanet.getPlanetList());
@@ -72,30 +92,4 @@ public class SearchPlanet {
         }
         return allNeighbours;
     }
-
-    /*public ArrayList<Planet> rTram() {
-        ArrayList<Planet> solution;
-        ArrayList<Planet> visited = new ArrayList<>();
-        Galaxy[] galaxyNeighbours = start.getGalaxySet();
-        for (Galaxy galaxy : galaxyNeighbours) {
-            ArrayList<Planet> neighbourGalaxy = universe.getGalaxy(galaxy);
-            rTramPlanet = neighbourGalaxy.get(start.getId() - 1);
-            if (rTramPlanet.getColor() == start.getColor() || rTramPlanet.getId() == start.getId()) {
-                if (universe.isGoal(rTramPlanet)) {
-                    solution = new ArrayList<>();
-                    solution.add(rTramPlanet);
-                    System.out.println("I reached here");
-                    return solution;
-                } else if (rTramPlanet.getColor() == start.getColor() || rTramPlanet.getId() == start.getId()) {
-                    for (int i = 0; i < galaxyNeighbours.length; i++) {
-                        if (!visited.contains(galaxy)) {
-                            solution = dfs(rTramPlanet, visited);
-                        }
-                    }
-                }
-            }
-        }
-        visited.remove(rTramPlanet);
-        return new ArrayList<>();
-    }*/
 }

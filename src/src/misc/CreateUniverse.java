@@ -9,6 +9,10 @@ import java.util.Set;
 
 public class CreateUniverse {
 
+	/**
+	 *In deze class worden de galaxies gecreëerd.
+	 */
+
 	public ArrayList<Planet> createGalaxyA(){
 		//creating galaxy A
 		ArrayList<Planet> planets = new ArrayList<>();

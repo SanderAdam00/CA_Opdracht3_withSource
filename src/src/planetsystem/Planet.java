@@ -21,6 +21,9 @@ public class Planet implements Comparable<Planet> {
         addGalaxyNeighbours(galaxy);
     }
 
+    /**
+     *In deze functie worden de galaxyNeighbours toegevoegd. In het geval van A, zijn galaxies B, C en D de buren.
+     */
     public void addGalaxyNeighbours(Galaxy galaxy) {
         switch (galaxy) {
             case A:
