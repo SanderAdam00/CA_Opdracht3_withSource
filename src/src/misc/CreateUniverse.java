@@ -1,11 +1,6 @@
 package misc;
-
-import misc.Color;
 import planetsystem.Planet;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Set;
 
 public class CreateUniverse {
 
@@ -35,7 +30,6 @@ public class CreateUniverse {
 		planetA7.addPlanetSet(new Planet[]{planetA8});
 		planetA8.addPlanetSet(new Planet[]{planetA7});
 		planetA9.addPlanetSet(new Planet[]{planetA6});
-
 
 		planets.add(planetA1);
 		planets.add(planetA2);

@@ -43,16 +43,8 @@ public class Universe {
         return position == goal;
     }
 
-    public Planet getGoal() {
-        return goal;
-    }
-
     public Planet getStart() {
         return start;
-    }
-
-    public ArrayList<Planet> getNeighbours(Planet planet) {
-        return planet.getPlanetList();
     }
 
     public ArrayList<Planet> getGalaxy(Galaxy galaxy) {

@@ -2,17 +2,16 @@ package planetsystem;
 
 import misc.Galaxy;
 import misc.Color;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Planet implements Comparable<Planet> {
+public class Planet {
 
     private Galaxy galaxy;
     private int id;
     private Color color;
-    private ArrayList<Planet> planetList = new ArrayList<>();
-    private Galaxy[] galaxySet;
+    private ArrayList<Planet> planetList = new ArrayList<>(); // neighbouring planets in the same galaxy
+    private Galaxy[] galaxyList; // other galaxies that are neighbours
 
     public Planet(Galaxy galaxy, int id, Color color) {
         this.galaxy = galaxy;
@@ -27,31 +26,31 @@ public class Planet implements Comparable<Planet> {
     public void addGalaxyNeighbours(Galaxy galaxy) {
         switch (galaxy) {
             case A:
-                galaxySet = new Galaxy[]{Galaxy.B, Galaxy.C, Galaxy.D};
+                galaxyList = new Galaxy[]{Galaxy.B, Galaxy.C, Galaxy.D};
                 break;
             case B:
-                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.F, Galaxy.K};
+                galaxyList = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.F, Galaxy.K};
                 break;
             case C:
-                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.E};
+                galaxyList = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.E};
                 break;
             case D:
-                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.B, Galaxy.C, Galaxy.F};
+                galaxyList = new Galaxy[]{Galaxy.A, Galaxy.B, Galaxy.C, Galaxy.F};
                 break;
             case E:
-                galaxySet = new Galaxy[]{Galaxy.C, Galaxy.F, Galaxy.G};
+                galaxyList = new Galaxy[]{Galaxy.C, Galaxy.F, Galaxy.G};
                 break;
             case F:
-                galaxySet = new Galaxy[]{Galaxy.B, Galaxy.D, Galaxy.E, Galaxy.H};
+                galaxyList = new Galaxy[]{Galaxy.B, Galaxy.D, Galaxy.E, Galaxy.H};
                 break;
             case G:
-                galaxySet = new Galaxy[]{Galaxy.E, Galaxy.H};
+                galaxyList = new Galaxy[]{Galaxy.E, Galaxy.H};
                 break;
             case H:
-                galaxySet = new Galaxy[]{Galaxy.F, Galaxy.G, Galaxy.K};
+                galaxyList = new Galaxy[]{Galaxy.F, Galaxy.G, Galaxy.K};
                 break;
             case K:
-                galaxySet = new Galaxy[]{Galaxy.B, Galaxy.H};
+                galaxyList = new Galaxy[]{Galaxy.B, Galaxy.H};
                 break;
         }
     }
@@ -59,7 +58,6 @@ public class Planet implements Comparable<Planet> {
     public void addPlanetSet(Planet[] planet) {
         this.planetList.addAll(Arrays.asList(planet));
     }
-
 
     public Galaxy getGalaxy() {
         return galaxy;
@@ -69,8 +67,8 @@ public class Planet implements Comparable<Planet> {
             return planetList;
     }
 
-    public Galaxy[] getGalaxySet() {
-        return galaxySet;
+    public Galaxy[] getGalaxyList() {
+        return galaxyList;
     }
 
     public int getId() {
@@ -81,8 +79,4 @@ public class Planet implements Comparable<Planet> {
         return color;
     }
 
-    @Override
-    public int compareTo(Planet o) {
-        return 0;
-    }
 }

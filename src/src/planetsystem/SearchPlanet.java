@@ -1,35 +1,26 @@
 package planetsystem;
-
 import misc.Galaxy;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Set;
+
 
 public class SearchPlanet {
 
     private Universe universe;
-    private Planet starting_point;
-    private Planet finish_point;
-    private Planet rTramPlanet;
 
     /**
-     * In deze constructor definiëren we de universe, maar ook wat de startingpoint en de finishingpoint moet zijn.
+     * In deze constructor definiëren we de universe
      */
-    public SearchPlanet(Universe universe) {
-        this.universe = universe;
-        starting_point = universe.getStart();
-        finish_point = universe.getGoal();
+    public SearchPlanet() {
+        this.universe = new Universe();
     }
 
     /**
-     * Als de startingPoint en de finisingPoint zijn gedefinieerd, dan kunnen we beginnen met zoeken. startSearching() wordt
-     * dan aangeroepen en in startSearching() staat een if-statement, als er geen solution gevonden wordt, dan print hij dat uit
-     * en stopt het programma
+     * Start het hele DFS process. startSearching() staat een if-statement, als de solution leeg is, is er geen oplossing
+     * gevonden.
      */
     public LinkedList<Planet> startSearching() {
-        LinkedList<Planet> solution = dfs(starting_point, new ArrayList<Planet>());
+        LinkedList<Planet> solution = dfs(universe.getStart(), new ArrayList<Planet>());
         if (solution.isEmpty()){
             System.out.println("No solution was found");
         }
@@ -51,7 +42,7 @@ public class SearchPlanet {
             solution = new LinkedList<>();
             solution.add(start);
             System.out.println("We found the solution");
-            return solution;
+            return solution; // solution found
         } else {
             ArrayList<Planet> neighbours = getAllNeighbours(start);
             for (Planet neighbour : neighbours) {
@@ -82,13 +73,12 @@ public class SearchPlanet {
      * kan worden, dan wordt het toegevoegd aan allNeighbours. De lijst die de galaxyburen bijhoudt.
      */
     public ArrayList<Planet> getAllNeighbours(Planet currentPlanet) {
-        ArrayList<Planet> allNeighbours = new ArrayList<>();
-        allNeighbours.addAll(currentPlanet.getPlanetList());
+        ArrayList<Planet> allNeighbours = new ArrayList<>(currentPlanet.getPlanetList());
 
-        Galaxy[] galaxyNeighbours = currentPlanet.getGalaxySet();
+        Galaxy[] galaxyNeighbours = currentPlanet.getGalaxyList();
         for (Galaxy galaxy : galaxyNeighbours) {
             ArrayList<Planet> neighbourGalaxy = universe.getGalaxy(galaxy);
-            rTramPlanet = neighbourGalaxy.get(currentPlanet.getId() - 1);
+            Planet rTramPlanet = neighbourGalaxy.get(currentPlanet.getId() - 1);
             if (rTramPlanet.getColor() == currentPlanet.getColor())
                 allNeighbours.add(rTramPlanet);
         }
