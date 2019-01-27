@@ -4,58 +4,76 @@ import misc.Galaxy;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Set;
 
 public class SearchPlanet {
 
     private Universe universe;
-    private Planet start;
-    private Planet goal;
+    private Planet starting_point;
+    private Planet finish_point;
     private Planet rTramPlanet;
 
 
     public SearchPlanet(Universe universe) {
         this.universe = universe;
-        start = universe.getStart();
-        goal = universe.getGoal();
+        starting_point = universe.getStart();
+        finish_point = universe.getGoal();
     }
 
-    public ArrayList<Planet> startSearching() {
-        ArrayList<Planet> solution = dfs(start, new ArrayList<Planet>());
+    public LinkedList<Planet> startSearching() {
+        LinkedList<Planet> solution = dfs(starting_point, new ArrayList<Planet>());
+        if (solution.isEmpty()){
+            System.out.println("No solution was found");
+        }
         return solution;
     }
 
 
-    public ArrayList<Planet> dfs(Planet start, ArrayList<Planet> visited) {
-        ArrayList<Planet> solution;
+    public LinkedList<Planet> dfs(Planet start, ArrayList<Planet> visited) {
+        LinkedList<Planet> solution;
         visited.add(start);
         System.out.println("current: " + start.getGalaxy() + start.getId());
         if (universe.isGoal(start)) {
-            solution = new ArrayList<>();
+            solution = new LinkedList<>();
             solution.add(start);
             System.out.println("Start was solution");
             return solution;
         } else {
-            ArrayList<Planet> neighbours = universe.getNeighbours(start);
+            ArrayList<Planet> neighbours = getAllNeighbours(start);
             for (Planet neighbour : neighbours) {
                 if (!visited.contains(neighbour)) {
                     solution = dfs(neighbour, visited);
-                    if (universe.isGoal(neighbour)) {
-                        solution.add(neighbour);
+                    if (!solution.isEmpty()) {
+                        solution.addFirst(start);
                         return solution;
                     }
                 }
             }
         }
-        if(!universe.isGoal(start)) {
+   /*     if(!universe.isGoal(start)) {
             rTram();
         }
-        System.out.println("Checked all galaxies");
-        visited.remove(start);
-        return new ArrayList<Planet>(); // no solution
+        System.out.println("Checked all galaxies");*/
+        //visited.remove(start);
+        return new LinkedList<>(); // no solution
     }
 
-    public ArrayList<Planet> rTram() {
+    public ArrayList<Planet> getAllNeighbours(Planet currentPlanet) {
+        ArrayList<Planet> allNeighbours = new ArrayList<>();
+        allNeighbours.addAll(currentPlanet.getPlanetList());
+
+        Galaxy[] galaxyNeighbours = currentPlanet.getGalaxySet();
+        for (Galaxy galaxy : galaxyNeighbours) {
+            ArrayList<Planet> neighbourGalaxy = universe.getGalaxy(galaxy);
+            rTramPlanet = neighbourGalaxy.get(currentPlanet.getId() - 1);
+            if (rTramPlanet.getColor() == currentPlanet.getColor())
+                allNeighbours.add(rTramPlanet);
+        }
+        return allNeighbours;
+    }
+
+    /*public ArrayList<Planet> rTram() {
         ArrayList<Planet> solution;
         ArrayList<Planet> visited = new ArrayList<>();
         Galaxy[] galaxyNeighbours = start.getGalaxySet();
@@ -79,5 +97,5 @@ public class SearchPlanet {
         }
         visited.remove(rTramPlanet);
         return new ArrayList<>();
-    }
+    }*/
 }

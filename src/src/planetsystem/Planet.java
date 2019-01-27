@@ -24,31 +24,31 @@ public class Planet implements Comparable<Planet> {
     public void addGalaxyNeighbours(Galaxy galaxy) {
         switch (galaxy) {
             case A:
-                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.B, Galaxy.D};
+                galaxySet = new Galaxy[]{Galaxy.B, Galaxy.C, Galaxy.D};
                 break;
             case B:
-                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.K, Galaxy.F};
+                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.F, Galaxy.K};
                 break;
             case C:
-                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.K, Galaxy.F};
+                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.E};
                 break;
             case D:
-                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.D, Galaxy.E, Galaxy.F};
+                galaxySet = new Galaxy[]{Galaxy.A, Galaxy.B, Galaxy.C, Galaxy.F};
                 break;
             case E:
                 galaxySet = new Galaxy[]{Galaxy.C, Galaxy.F, Galaxy.G};
                 break;
             case F:
-                galaxySet = new Galaxy[]{Galaxy.D, Galaxy.E, Galaxy.H, Galaxy.B};
+                galaxySet = new Galaxy[]{Galaxy.B, Galaxy.D, Galaxy.E, Galaxy.H};
                 break;
             case G:
                 galaxySet = new Galaxy[]{Galaxy.E, Galaxy.H};
                 break;
             case H:
-                galaxySet = new Galaxy[]{Galaxy.G, Galaxy.H, Galaxy.K};
+                galaxySet = new Galaxy[]{Galaxy.F, Galaxy.G, Galaxy.K};
                 break;
             case K:
-                galaxySet = new Galaxy[]{Galaxy.H, Galaxy.B};
+                galaxySet = new Galaxy[]{Galaxy.B, Galaxy.H};
                 break;
         }
     }

@@ -25,7 +25,7 @@ public class CreateUniverse {
 
 		planetA1.addPlanetSet(new Planet[]{planetA2, planetA4});
 		planetA2.addPlanetSet(new Planet[]{planetA1});
-		planetA3.addPlanetSet(new Planet[]{planetA4});
+		planetA3.addPlanetSet(new Planet[]{planetA6});
 		planetA4.addPlanetSet(new Planet[]{planetA1});
 		planetA6.addPlanetSet(new Planet[]{planetA3, planetA9});
 		planetA7.addPlanetSet(new Planet[]{planetA8});
@@ -59,14 +59,10 @@ public class CreateUniverse {
 		Planet planetB8 = new Planet(Galaxy.B, 8, Color.RED);
 		Planet planetB9 = new Planet(Galaxy.B, 9, Color.GREEN);
 
-		planetB1.addPlanetSet(new Planet[]{planetB2, planetB4});
-		planetB2.addPlanetSet(new Planet[]{planetB1, planetB4});
-		planetB3.addPlanetSet(new Planet[]{planetB2});
-		planetB4.addPlanetSet(new Planet[]{planetB1, planetB7});
-		planetB5.addPlanetSet(new Planet[]{planetB6, planetB8});
+		planetB1.addPlanetSet(new Planet[]{planetB2});
+		planetB2.addPlanetSet(new Planet[]{planetB1});
+		planetB5.addPlanetSet(new Planet[]{planetB6});
 		planetB6.addPlanetSet(new Planet[]{planetB5});
-		planetB7.addPlanetSet(new Planet[]{planetB4});
-		planetB8.addPlanetSet(new Planet[]{planetB5});
 
 		planets.add(planetB1);
 		planets.add(planetB2);
@@ -94,10 +90,14 @@ public class CreateUniverse {
 		Planet planetC8 = new Planet(Galaxy.C,8, Color.GREEN);
 		Planet planetC9 = new Planet(Galaxy.C,9, Color.YELLOW);
 
-		planetC1.addPlanetSet(new Planet[]{planetC4});
-		planetC2.addPlanetSet(new Planet[]{planetC3});
+		planetC1.addPlanetSet(new Planet[]{planetC1, planetC4});
+		planetC2.addPlanetSet(new Planet[]{planetC1, planetC3});
 		planetC3.addPlanetSet(new Planet[]{planetC2});
-		planetC4.addPlanetSet(new Planet[]{planetC1});
+		planetC4.addPlanetSet(new Planet[]{planetC1, planetC7});
+		planetC5.addPlanetSet(new Planet[]{planetC6, planetC8});
+		planetC6.addPlanetSet(new Planet[]{planetC5});
+		planetC7.addPlanetSet(new Planet[]{planetC4});
+		planetC8.addPlanetSet(new Planet[]{planetC5});
 
 		planets.add(planetC1);
 		planets.add(planetC2);
@@ -115,22 +115,20 @@ public class CreateUniverse {
 	public ArrayList<Planet> createGalaxyD(){
 		//creating galaxy D
 		ArrayList<Planet> planets = new ArrayList<>();
-		Planet planetD1 = new Planet(Galaxy.C,1, Color.BLUE);
-		Planet planetD2 = new Planet(Galaxy.C,2, Color.BLUE);
-		Planet planetD3 = new Planet(Galaxy.C,3, Color.BLUE);
-		Planet planetD4 = new Planet(Galaxy.C,4, Color.BLUE);
-		Planet planetD5 = new Planet(Galaxy.C,5, Color.BLUE);
-		Planet planetD6 = new Planet(Galaxy.C,6, Color.BLUE);
-		Planet planetD7 = new Planet(Galaxy.C,7, Color.RED);
-		Planet planetD8 = new Planet(Galaxy.C,8, Color.RED);
-		Planet planetD9 = new Planet(Galaxy.C,9, Color.YELLOW);
+		Planet planetD1 = new Planet(Galaxy.D,1, Color.BLUE);
+		Planet planetD2 = new Planet(Galaxy.D,2, Color.BLUE);
+		Planet planetD3 = new Planet(Galaxy.D,3, Color.BLUE);
+		Planet planetD4 = new Planet(Galaxy.D,4, Color.BLUE);
+		Planet planetD5 = new Planet(Galaxy.D,5, Color.BLUE);
+		Planet planetD6 = new Planet(Galaxy.D,6, Color.BLUE);
+		Planet planetD7 = new Planet(Galaxy.D,7, Color.RED);
+		Planet planetD8 = new Planet(Galaxy.D,8, Color.RED);
+		Planet planetD9 = new Planet(Galaxy.D,9, Color.YELLOW);
 
 		planetD1.addPlanetSet(new Planet[]{planetD4});
 		planetD2.addPlanetSet(new Planet[]{planetD3});
+		planetD4.addPlanetSet(new Planet[]{planetD2});
 		planetD4.addPlanetSet(new Planet[]{planetD1});
-		planetD5.addPlanetSet(new Planet[]{planetD6});
-		planetD6.addPlanetSet(new Planet[]{planetD5, planetD9});
-		planetD7.addPlanetSet(new Planet[]{planetD8});
 
 		planets.add(planetD1);
 		planets.add(planetD2);
@@ -164,8 +162,8 @@ public class CreateUniverse {
 		planetE4.addPlanetSet(new Planet[]{planetE1});
 		planetE5.addPlanetSet(new Planet[]{planetE6});
 		planetE6.addPlanetSet(new Planet[]{planetE5, planetE9});
-		planetE7.addPlanetSet(new Planet[]{planetE7});
-		planetE8.addPlanetSet(new Planet[]{planetE8});
+		planetE7.addPlanetSet(new Planet[]{planetE8});
+		planetE8.addPlanetSet(new Planet[]{planetE7});
 		planetE9.addPlanetSet(new Planet[]{planetE6});
 
 		planets.add(planetE1);
