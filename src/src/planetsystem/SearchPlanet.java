@@ -26,7 +26,7 @@ public class SearchPlanet {
     /**
      * Als de startingPoint en de finisingPoint zijn gedefinieerd, dan kunnen we beginnen met zoeken. startSearching() wordt
      * dan aangeroepen en in startSearching() staat een if-statement, als er geen solution gevonden wordt, dan print hij dat uit
-     * en stopt het programma, om eem mogelijke cycle te voorkomen.
+     * en stopt het programma
      */
     public LinkedList<Planet> startSearching() {
         LinkedList<Planet> solution = dfs(starting_point, new ArrayList<Planet>());
@@ -47,7 +47,6 @@ public class SearchPlanet {
     public LinkedList<Planet> dfs(Planet start, ArrayList<Planet> visited) {
         LinkedList<Planet> solution;
         visited.add(start);
-        System.out.println("current: " + start.getGalaxy() + start.getId());
         if (universe.isGoal(start)) {
             solution = new LinkedList<>();
             solution.add(start);
@@ -57,6 +56,7 @@ public class SearchPlanet {
             ArrayList<Planet> neighbours = getAllNeighbours(start);
             for (Planet neighbour : neighbours) {
                 if (!visited.contains(neighbour)) {
+                    System.out.println("" +start.getGalaxy() + start.getId() +" -> " + neighbour.getGalaxy() + neighbour.getId());
                     solution = dfs(neighbour, visited);
                     if (!solution.isEmpty()) {
                         solution.addFirst(start);
@@ -64,7 +64,9 @@ public class SearchPlanet {
                     }
                 }
             }
+
         }
+        System.out.println("" +start.getGalaxy() + start.getId() + " -> dead end");
         return new LinkedList<>(); // no solution
     }
 

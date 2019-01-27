@@ -35,8 +35,8 @@ public class Universe {
         /**
          * Een goal en start die gehardcode zijn. Deze hebben we regelmatig veranderd om te testen.
          */
-        start = GalaxyD.get(3); // hardcoded start
-        goal = GalaxyD.get(7); // hardcoded goal
+        start = GalaxyG.get(0); // hardcoded start
+        goal = GalaxyG.get(1); // hardcoded goal
     }
 
     public boolean isGoal(Planet position) {
